@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# v1.2
+
+# Explicitly cached 'master entries'.
+CACHE:
+http://imgs.xkcd.com/
+
+# Resources that require the user to be online.
+NETWORK:
+*

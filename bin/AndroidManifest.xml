@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.euricainc.ambc.xkcd"
+    android:versionCode="3"
+    android:versionName="0.0.3-RC1">
+
+    <!-- This defines the minimum Android version that can run this program -->
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+    <!-- We need to ask for permission to use the INTERNETZ -->
+    <uses-permission android:name="android.permission.INTERNET" /><!-- 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="true" >
+
+        <!-- Remember to define all the Activities in the AndroidManifest! -->
+        <activity
+            android:name="com.euricainc.ambc.xkcd.MyActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+
+            <!-- This basically tells the Android System that the Activity "MyActivity" is to be started when the launcher icon is pressed. -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
